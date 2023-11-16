@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Consolas;
+    src: url(font/Consolas-Font/CONSOLAB.ttf);
+}
+
+* {
+    font-family: Consolas;
+}
+
+body {
+    background-image: linear-gradient(rgb(19, 19, 19), rgb(68, 68, 68));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
