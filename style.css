@@ -63,6 +63,10 @@ form {
     width: 500px;
 }
 
+input {
+    color: black;
+}
+
 button {
     color: black;
 }
