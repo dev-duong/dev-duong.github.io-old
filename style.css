@@ -20,7 +20,7 @@ body {
     background-attachment: fixed;
 }
 
-.pfp {
+img {
     border-radius: 50%;
 
     object-fit: cover;
@@ -31,7 +31,7 @@ body {
 a {
     text-decoration: none;
     font-size: 25px;
-    
+
     margin: 0;
     padding-right: 60px;
 }
