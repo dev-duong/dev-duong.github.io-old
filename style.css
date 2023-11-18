@@ -4,11 +4,38 @@
 }
 
 * {
+    /* font settings */
     font-family: Consolas;
+    font-weight: 100;
+
+    /* page settings */
+    margin: 10px;
+    color: white;
 }
 
 body {
+    /* background gradient */
     background-image: linear-gradient(rgb(19, 19, 19), rgb(68, 68, 68));
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+.pfp {
+    border-radius: 50%;
+
+    object-fit: cover;
+    width: 550px;
+    height: 550px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+    
+    margin: 0;
+    padding-right: 60px;
+}
+
+a:hover {
+    text-decoration: underline;
 }
