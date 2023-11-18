@@ -56,3 +56,13 @@ a:hover {
     100% { opacity: 1; }
 }
 
+/* Contact page */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+button {
+    color: black;
+}
