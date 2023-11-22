@@ -9,8 +9,9 @@
     font-weight: 100;
 
     /* page settings */
-    margin: 10px;
+    box-sizing: border-box;
     color: white;
+    margin: 0;
 }
 
 body {
@@ -18,10 +19,13 @@ body {
     background-image: linear-gradient(rgb(19, 19, 19), rgb(68, 68, 68));
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    overflow-x: hidden;
+    margin: 10px;
 }
 
 /* nav */
-#navbar{
+#navbar {
     display: flex;
     justify-content: space-between;
 }
@@ -49,20 +53,25 @@ img {
     animation: fadeIn 6s;
 }
 
-a {
+.navbtn {
     text-decoration: none;
     font-size: 25px;
     margin: 0;
 }
 
-a:hover {
+.navbtn:hover {
     text-decoration: underline;
 }
 
 /* fadeIn frames */
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Contact page */
@@ -78,4 +87,20 @@ input {
 
 button {
     color: black;
+}
+
+/* FOOTER */
+footer {
+    background-color: white;
+
+    text-align: center;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+#githuburl {
+    color: black;
+    text-decoration: none;
 }
