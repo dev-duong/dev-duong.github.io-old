@@ -57,15 +57,16 @@ img {
 
 #introduction {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
-    align-items: center;
-    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+
+    position: absolute;
+
+    justify-content: flex-start;
 
     animation: fadeIn 6s;
-    margin: 5%;
-
-    gap: 25px;
 }
 
 #intro_text {
@@ -75,7 +76,7 @@ img {
 }
 
 #fake_input {
-    margin-left: -8%;
+    margin-left: -22px;
     color: rgb(144, 144, 144);
 }
 
