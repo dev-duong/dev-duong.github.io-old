@@ -58,15 +58,11 @@ img {
 #introduction {
     display: flex;
     flex-direction: row;
-
-    padding-left: 20%;
-    padding-right: 20%;
-
-    position: absolute;
-
+    align-items: center;
     justify-content: flex-start;
-
     animation: fadeIn 6s;
+    margin: 5%;
+    gap: 25px;
 }
 
 #intro_text {
