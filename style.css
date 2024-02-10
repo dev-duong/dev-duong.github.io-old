@@ -62,7 +62,7 @@ img {
     justify-content: flex-start;
     animation: fadeIn 6s;
     margin: 5%;
-    gap: 25px;
+    padding-left: 15%;
 }
 
 #intro_text {
@@ -72,11 +72,21 @@ img {
 }
 
 #fake_input {
+    font-size: 35px;
     margin-left: -22px;
     color: rgb(144, 144, 144);
 }
 
+#hello {
+    font-size: 50px;
+}
+
+#career {
+    font-size: 50px;
+}
+
 #intro-para {
+    font-size: 20px;
     color: rgb(144, 144, 144);
 }
 
