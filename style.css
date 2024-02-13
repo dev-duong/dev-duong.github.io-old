@@ -1,120 +1,80 @@
 @font-face {
     font-family: Consolas;
-    src: url(font/Consolas-Font/CONSOLAB.ttf);
+    src: url(Fonts/Consolas-Font/CONSOLAB.ttf);
 }
 
 * {
     /* font settings */
     font-family: Consolas;
-    font-weight: 100;
+    letter-spacing: 10px;
+    color: white;
 
     /* page settings */
-    box-sizing: border-box;
-    color: white;
     margin: 0px;
 }
 
 body {
-    /* background gradient */
-    background-image: linear-gradient(rgb(19, 19, 19), rgb(68, 68, 68));
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-    overflow-x: hidden;
+    background-color: rgb(61, 61, 61);
 }
 
-/* nav */
-#navbar {
-    display: flex;
-    gap: 6%;
-    padding: 20px;
+/* NavBar */
+nav {
+    padding-top: 25px;
+    padding-bottom: 25px;
     padding-left: 100px;
     padding-right: 100px;
-
-    width: 100%;
 
     background-color: rgb(45, 45, 45);
 }
 
-.navbtn {
+ul.topnav {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.navBtn a:hover:not(.active) {
+    border-bottom: 2px white;
+}
+
+li {
+    display: flex;
+}
+
+#leftName {
+    padding: 0px;
+    display: flex;
+}
+
+.name {
+    font-size: 40px;
     text-decoration: none;
-    font-size: 25px;
-
-    color: white;
-}
-
-.navbtn:hover {
-    text-decoration: underline;
-}
-
-img {
-    border-radius: 50%;
-
-    object-fit: cover;
-    width: 250px;
-    height: 250px;
-}
-
-#introduction {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    animation: fadeIn 6s;
-    margin: 5%;
-    padding-left: 15%;
+    gap: 25px;
 }
 
-#intro_text {
+#lastName {
+    color: rgb(208, 139, 75);
+}
+
+#rightBtns {
     display: flex;
-    flex-direction: column;
-    align-items: left;
+    gap: 150px;
 }
 
-#fake_input {
-    font-size: 35px;
-    margin-left: -22px;
-    color: rgb(144, 144, 144);
+.navBtn {
+    font-size: 24px;
+    float: right;
+    padding: 9.5px;
+    text-decoration: none;
+    text-align: center;
 }
 
-#hello {
-    font-size: 50px;
-}
-
-#career {
-    font-size: 50px;
-}
-
-#intro-para {
-    font-size: 20px;
-    color: rgb(144, 144, 144);
-}
-
-
-/* fadeIn frames */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Contact page */
-form {
+/* Body */
+#indexName {
     display: flex;
-    flex-direction: column;
-    width: 500px;
-}
-
-input {
-    color: black;
-}
-
-button {
-    color: black;
+    gap: 50px;
 }
 
 /* FOOTER */
@@ -129,13 +89,43 @@ footer {
     text-align: left;
 
     position: fixed;
-    bottom: 20px;
+    bottom: 25px;
     left: 0;
 }
 
 .URLS {
-    font-size: 25px;
-    color: white;
     text-decoration: none;
+    font-size: 24px;
+}
 
+@media screen and (max-width: 1400px) {
+    ul.topnav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #leftName {
+        justify-content: center;
+    }
+
+    li {
+        justify-content: center;
+    }
+
+    nav {
+        padding: 0px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .navBtn {
+        float: none;
+        width: 100%;
+    }
+
+    #rightBtns {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
 }
