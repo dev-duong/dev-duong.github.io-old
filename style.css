@@ -54,10 +54,6 @@ li {
     gap: 25px;
 }
 
-#lastName {
-    color: rgb(208, 139, 75);
-}
-
 #rightBtns {
     display: flex;
     gap: 150px;
@@ -92,6 +88,8 @@ h4 {
 
 .homeItems {
     display: flex;
+    padding: 200px;
+    gap: 200px;
 }
 
 .homeText {
@@ -99,11 +97,28 @@ h4 {
     flex-direction: column;
 }
 
+h1 {
+    font-size: 64px;
+    text-shadow: 6px 6px rgb(45, 45, 45);
+
+}
+
+h2 {
+    font-size: 40px;
+}
+
 .para {
     display: flex;
     flex-direction: row;
-
+    flex-wrap: wrap;
+    width: 700px;
+    font-size: 24px;
 }
+
+p, #uni {
+    letter-spacing: 5px;
+}
+
 
 /* FOOTER */
 footer {
