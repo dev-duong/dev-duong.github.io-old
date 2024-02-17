@@ -13,8 +13,10 @@
     margin: 0px;
 }
 
-body {
+html, body {
     background-color: rgb(61, 61, 61);
+    height: 100%;
+    overflow: hidden;
 }
 
 /* NavBar */
@@ -87,8 +89,11 @@ h4 {
 }
 
 .homeItems {
+    height: 100%;
+    margin-top: -100px;
     display: flex;
-    padding: 200px;
+    justify-content: center;
+    align-items: center;
     gap: 200px;
 }
 
