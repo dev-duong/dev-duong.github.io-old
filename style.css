@@ -198,6 +198,7 @@ footer {
         padding: 0px;
         padding-top: 25px;
         padding-bottom: 25px;
+        margin-bottom: 300px;
     }
 
     .navBtn {
@@ -213,5 +214,15 @@ footer {
 
     .homeItems {
         flex-direction: column;
+    }
+
+    footer {
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .URLS {
+        font-size: 15px;
     }
 }
