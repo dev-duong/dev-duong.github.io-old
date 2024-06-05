@@ -210,4 +210,8 @@ footer {
         flex-direction: column;
         gap: 0px;
     }
+
+    .homeItems {
+        flex-direction: column;
+    }
 }
