@@ -11,12 +11,12 @@
 
     /* page settings */
     margin: 0px;
+    height: auto;
 }
 
 html, body {
     background-color: rgb(61, 61, 61);
     height: 100%;
-    overflow: hidden;
 }
 
 /* NavBar */
@@ -198,7 +198,6 @@ footer {
         padding: 0px;
         padding-top: 25px;
         padding-bottom: 25px;
-        margin-bottom: 300px;
     }
 
     .navBtn {
@@ -214,15 +213,47 @@ footer {
 
     .homeItems {
         flex-direction: column;
+        margin: 0px;
+        margin-top: 100px;
+
+        gap: 50px;
     }
 
     footer {
         margin: 0;
         text-align: center;
         justify-content: center;
+
+        bottom: auto;
+        position: absolute;
+
+        padding: 25px;
     }
 
     .URLS {
         font-size: 15px;
+    }
+
+    .homeText, #indexName {
+        text-align: center;
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .indexButtons {
+        justify-content: center;
+        width: auto;
+        margin: auto;
+    }
+
+    .para {
+        width: auto;
     }
 }
