@@ -180,6 +180,8 @@ footer {
     font-size: 24px;
 }
 
+/* ABOUT PAGE */
+
 .title-section {
     display: flex;
     align-items: center;
@@ -188,7 +190,7 @@ footer {
     margin-right: 20%;
 }
 
-.title-section h1 {
+.title-section h2 {
     font-size: 24px;
     margin: 0;
     padding-right: 20px;
@@ -198,6 +200,17 @@ footer {
     flex-grow: 1;
     height: 3px;
     background-color: #fff;
+}
+
+.interests-section {
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.interests-section p {
+    text-align: justify;
+    line-height: 150%;
 }
 
 @media screen and (max-width: 1400px) {
