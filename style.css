@@ -5,7 +5,7 @@
 
 * {
     /* font settings */
-    font-family: Consolas;
+    font-family: Consolas, sans-serif;
     letter-spacing: 10px;
     color: white;
 
@@ -17,6 +17,8 @@
 html, body {
     background-color: rgb(61, 61, 61);
     height: 100%;
+
+    overflow: hidden;
 }
 
 /* NavBar */
@@ -86,21 +88,28 @@ h4 {
 
     box-shadow: 25px 25px;
     color: rgb(45, 45, 45);
+
 }
 
 .homeItems {
-    height: 100%;
-    margin-top: -100px;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 200px;
+
+    margin: auto;
+
+    width: 75%;
 }
 
-.homeText {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+.homeItems p {
+    padding-left: 100px;
+
+}
+
+.hereBtn {
+    color: rgb(97, 184, 255);
+    text-decoration: none;
 }
 
 h1 {
