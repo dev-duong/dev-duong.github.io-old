@@ -12,6 +12,8 @@
     /* page settings */
     margin: 0px;
     height: auto;
+
+    overflow: hidden;
 }
 
 html, body {
@@ -225,14 +227,34 @@ footer {
     }
 
     footer {
-        margin: 0;
+        margin: 0%;
+        padding: 0px;
+
+        gap: none;
 
         text-align: center;
         justify-content: center;
 
+        flex-direction: column;
+
         bottom: auto;
         position: absolute;
     }
+
+    /* footer {
+        margin-left: 100px;
+        margin-right: 100px;
+    
+        width: 100%;
+        display: flex;
+        gap: 6%;
+    
+        text-align: left;
+    
+        position: fixed;
+        bottom: 25px;
+        left: 0;
+    } */
 
     .URLS {
         font-size: 15px;
