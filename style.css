@@ -17,8 +17,6 @@
 html, body {
     background-color: rgb(61, 61, 61);
     height: 100%;
-
-    overflow: hidden;
 }
 
 /* NavBar */
