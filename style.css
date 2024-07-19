@@ -182,6 +182,11 @@ footer {
 }
 
 @media screen and (max-width: 1400px) {
+
+    html, body {
+        overflow: hidden;
+    }
+
     ul.topnav {
         display: flex;
         flex-direction: column;
@@ -223,13 +228,12 @@ footer {
 
     footer {
         margin: 0;
+
         text-align: center;
         justify-content: center;
 
         bottom: auto;
         position: absolute;
-
-        padding: 25px;
     }
 
     .URLS {
@@ -252,7 +256,7 @@ footer {
 
     .homeItems p {
         padding-left: 0px;
-    
+        text-align: center;    
     }
 
     .para {
