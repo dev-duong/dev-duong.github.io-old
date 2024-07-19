@@ -215,7 +215,8 @@ footer {
     .homeItems {
         flex-direction: column;
         margin: 0px;
-        margin-top: 100px;
+        margin-right: auto;
+        margin-left: auto;
 
         gap: 50px;
     }
@@ -246,12 +247,12 @@ footer {
 
     p {
         font-size: 20px;
+        padding: 0;
     }
 
-    .indexButtons {
-        justify-content: center;
-        width: auto;
-        margin: auto;
+    .homeItems p {
+        padding-left: 0px;
+    
     }
 
     .para {
