@@ -181,10 +181,6 @@ footer {
 
 @media screen and (max-width: 1400px) {
 
-    html, body {
-        overflow: hidden;
-    }
-
     ul.topnav {
         display: flex;
         flex-direction: column;
