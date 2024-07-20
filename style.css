@@ -185,6 +185,7 @@ footer {
     ul.topnav {
         display: flex;
         flex-direction: column;
+        padding: 0;
     }
 
     #leftName {
@@ -227,6 +228,10 @@ footer {
 
     .URLS {
         font-size: 15px;
+    }
+
+    .name {
+        font-size: 35px;
     }
 
     h1 {
