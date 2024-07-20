@@ -17,6 +17,8 @@
 html, body {
     background-color: rgb(61, 61, 61);
     height: 100%;
+
+    overflow-x: hidden;
 }
 
 /* NavBar */
@@ -33,11 +35,6 @@ ul.topnav {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    padding: 0px;
-}
-
-ul.topnav li a:hover:not(.active) {
-    border-bottom: 10px;
 }
 
 li {
@@ -45,7 +42,6 @@ li {
 }
 
 #leftName {
-    padding: 0px;
     display: flex;
 }
 
@@ -58,12 +54,11 @@ li {
 
 #rightBtns {
     display: flex;
-    gap: 150px;
+    gap: 50px;
 }
 
 .navBtn {
     font-size: 24px;
-    float: right;
     padding: 9.5px;
     text-decoration: none;
     text-align: center;
@@ -71,6 +66,7 @@ li {
 
 .navBtn:hover,  #firstName:hover{
     text-shadow: 8px 8px  rgb(19, 19, 19);
+    transition: text-shadow 0.3s ease;
 }
 
 /* Body */
@@ -81,16 +77,23 @@ h4 {
 
 .polaroid {
     padding: 10px;
-    width: fit-content;
+    max-width: 100%;
     background-color: rgb(217, 217, 217);
 
     box-shadow: 25px 25px;
     color: rgb(45, 45, 45);
 
+    border-radius: 10px;
+    transform: rotate(-3deg);
+}
+
+.polaroid img {
+    width: 100%;
+    height: auto; 
 }
 
 .homeItems {
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,7 +105,6 @@ h4 {
 
 .homeItems p {
     padding-left: 100px;
-
 }
 
 .hereBtn {
@@ -127,8 +129,7 @@ p, .hereBtn {
 
 /* FOOTER */
 footer {
-    margin-left: 100px;
-    margin-right: 100px;
+    padding: 25px 100px;
 
     width: 100%;
     display: flex;
@@ -190,19 +191,13 @@ footer {
         justify-content: center;
     }
 
-    li {
-        justify-content: center;
-    }
-
     nav {
-        padding: 0px;
-        padding-top: 25px;
-        padding-bottom: 25px;
+        padding: 15px
     }
 
     .navBtn {
-        float: none;
         width: 100%;
+        text-align: center;
     }
 
     #rightBtns {
@@ -213,36 +208,29 @@ footer {
 
     .homeItems {
         flex-direction: column;
-        margin: 0px;
-        margin-right: auto;
-        margin-left: auto;
-
+        align-items: center;
         gap: 50px;
     }
 
+    .homeItems p {
+        padding-left: 0px;
+        text-align: center;    
+    }
+
     footer {
-        margin: 0%;
-        padding: 0px;
-        padding-bottom: 25px;
-
-        gap: 20px;
-
-        text-align: center;
-        justify-content: center;
-
+        padding: 15px;
         flex-direction: column;
-
-        bottom: auto;
-        position: absolute;
+        align-items: center;
+        gap: 20px;
+        position: static; /* Ensures footer is at the bottom of content */
     }
 
     .URLS {
         font-size: 15px;
     }
 
-    .homeText, #indexName {
-        text-align: center;
-        justify-content: center;
+    h1 {
+        font-size: 48px;
     }
 
     h2 {
@@ -251,15 +239,5 @@ footer {
 
     p {
         font-size: 20px;
-        padding: 0;
-    }
-
-    .homeItems p {
-        padding-left: 0px;
-        text-align: center;    
-    }
-
-    .para {
-        width: auto;
     }
 }
