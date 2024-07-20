@@ -246,3 +246,10 @@ footer {
         font-size: 20px;
     }
 }
+
+@media screen and (max-width: 350px) {
+    .name {
+        font-size: 25px;
+        flex-wrap: wrap;
+    }
+}
