@@ -223,8 +223,9 @@ footer {
     footer {
         margin: 0%;
         padding: 0px;
+        padding-bottom: 25px;
 
-        gap: none;
+        gap: 20px;
 
         text-align: center;
         justify-content: center;
@@ -234,21 +235,6 @@ footer {
         bottom: auto;
         position: absolute;
     }
-
-    /* footer {
-        margin-left: 100px;
-        margin-right: 100px;
-    
-        width: 100%;
-        display: flex;
-        gap: 6%;
-    
-        text-align: left;
-    
-        position: fixed;
-        bottom: 25px;
-        left: 0;
-    } */
 
     .URLS {
         font-size: 15px;
