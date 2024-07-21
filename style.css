@@ -69,6 +69,10 @@ li {
     transition: text-shadow 0.3s ease;
 }
 
+.hamburger {
+    display: none; /* hide in non-mobile sizes*/
+}
+
 /* Body */
 
 h4 {
@@ -193,7 +197,7 @@ footer {
     }
 
     nav {
-        padding: 15px
+        padding: 15px 0px 10px 0px;
     }
 
     .navBtn {
@@ -201,10 +205,20 @@ footer {
         text-align: center;
     }
 
+    .hamburger {
+        display: block; /* Show hamburger menu on mobile */
+
+        font-size: 30px;
+        background: none;
+        border: none;
+        color: white;
+    }
+
     #rightBtns {
-        display: flex;
+        display: none;
         flex-direction: column;
-        gap: 0px;
+        width: 100%;
+        gap: 10px;
     }
 
     .homeItems {
@@ -227,7 +241,7 @@ footer {
     }
 
     .URLS {
-        font-size: 15px;
+        font-size: 24px;
     }
 
     .name {

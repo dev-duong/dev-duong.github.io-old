@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Dat Duong's DevPortfolio</title>
-    </head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dat Duong's DevPortfolio</title>
+</head>
 
-   
+<body>
 
-    <body>
-        <nav>
-                <ul class="topnav">
-                    <div id="leftName">
-                        <a href="index.html" class="name">
-                            <li id="firstName">> DAT <span
-                                    style="color: rgb(208, 139, 75)">&nbsp;DUONG</span></li>
-                        </a>
-                    </div>
-                    <div id="rightBtns">
-                        <li><a href="about.html" class="navBtn">ABOUT</a></li>
-                        <li><a href="projects.html" class="navBtn">PROJECTS</a></li>
-                        <li><a href="contact.html" class="navBtn">CONTACT</a></li>
-                    </div>
-                </ul>
-        </nav>
-        <div class="homeItems">
-            <div class="polaroid">
-                <img src="Images/index_page/Rectangle 24.png">
-                <div class="polInfo">
-                    <h4>Universal Studios,</h4>
-                    <h4>Singapore</h4>
-                    <h4>2024</h4>
-                </div>
+    <nav>
+        <ul class="topnav">
+            <div id="leftName">
+                <a href="index.html" class="name">
+                    <li id="firstName">> DAT <span style="color: rgb(208, 139, 75)">&nbsp;DUONG</span></li>
+                </a>
             </div>
+            <button class="hamburger" onclick="toggleMenu()">☰</button>
+            <div id="rightBtns" class="navLinks">
+                <li><a href="about.html" class="navBtn">ABOUT</a></li>
+                <li><a href="projects.html" class="navBtn">PROJECTS</a></li>
+                <li><a href="contact.html" class="navBtn">CONTACT</a></li>
+            </div>
+        </ul>
+    </nav>
 
-            <p>
-                My name is Dat, but I also go by Brendan.<br> I am a QUT Computer Science Graduate exploring low-level programming and UI/UX Design.<br> You can find my CV <a href="" class="hereBtn">here</href>.
-            </p>
+    <div class="homeItems">
+        <div class="polaroid">
+            <img src="Images/index_page/Rectangle 24.png">
+            <div class="polInfo">
+                <h4>Universal Studios,</h4>
+                <h4>Singapore</h4>
+                <h4>2024</h4>
+            </div>
         </div>
-        <footer>
-            <a class="URLS" href="https://github.com/Git-DanD">GITHUB</a>
-            <a class="URLS"
-                href="https://www.linkedin.com/in/dat-tan-duong/">LINKEDIN</a>
-        </footer>
-    </body>
+        <p>
+            My name is Dat, but I also go by Brendan.<br> I am a QUT Computer Science Graduate exploring low-level programming and UI/UX Design.<br> You can find my CV <a href="" class="hereBtn">here</a>.
+        </p>
+    </div>
 
-    </html>
+    <footer>
+        <a class="URLS" href="https://github.com/Git-DanD">GITHUB</a>
+        <a class="URLS" href="https://www.linkedin.com/in/dat-tan-duong/">LINKEDIN</a>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var navLinks = document.getElementById("rightBtns");
+            if (navLinks.style.display === "flex") {
+                navLinks.style.display = "none";
+            } else {
+                navLinks.style.display = "flex";
+            }
+        }
+    </script>
+    
+</body>
+</html>
