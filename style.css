@@ -97,14 +97,10 @@ h4 {
 }
 
 .homeItems {
-    min-height: 50vh;
+    min-height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    margin: auto;
-
-    width: 75%;
 }
 
 .homeItems p {
@@ -129,6 +125,42 @@ p, .hereBtn {
     font-family: sans-serif;
     font-size: 18px;
     letter-spacing: normal;
+}
+
+.box-shape {
+    width: 50%;
+    height: 400px;
+    
+
+    color: rgb(45, 45, 45);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: space;
+
+    border-radius: 10px;
+
+    margin: auto;
+}
+
+.project-card {
+    width: 250px;
+    height: 80%;
+    background-color: rgb(105, 105, 105);
+
+    color: rgb(45, 45, 45);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    margin: auto;
+}
+
+.project-card:hover {
+    box-shadow: 25px 25px;
+    transition: box-shadow 0.3s ease;
 }
 
 /* FOOTER */
@@ -156,7 +188,7 @@ footer {
 .title-section {
     display: flex;
     align-items: center;
-    margin-top: 100px;
+
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -173,15 +205,10 @@ footer {
     background-color: #fff;
 }
 
-.interests-section {
+.about-section {
     margin-top: 50px;
     margin-left: 20%;
     margin-right: 20%;
-}
-
-.interests-section p {
-    text-align: justify;
-    line-height: 150%;
 }
 
 @media screen and (max-width: 1400px) {
