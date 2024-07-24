@@ -128,35 +128,32 @@ p, .hereBtn {
 }
 
 .card-box {
-    width: 50%;
-    height: 350px;
+    width: 60%; /* Adjust the width as needed */
+    height: auto;
     
-
-    color: rgb(45, 45, 45);
-
     display: flex;
-    justify-content: space-evenly;
-    align-items: space;
-
+    flex-wrap: wrap;
+    justify-content: space-between; /* Or use space-evenly or space-around */
+    align-items: center;
     border-radius: 10px;
-
     margin: auto;
+    gap: 30px; /* Optional: Add some gap between the cards */
+}
+
+.project-card img {
+    width: 100%;
+    height: 350px;
 }
 
 .project-card {
-    width: 250px;
-    height: 100%;
-    background-color: rgb(105, 105, 105);
-
+    flex: 1 1 calc(33.33% - 20px); /* Flexible basis to ensure 3 cards per row */
+    max-width: 350px;
+    height: 450px; /* Set a fixed height or auto if you prefer */
+    background-color: rgb(217, 217, 217);
     color: rgb(45, 45, 45);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     border-radius: 10px;
-    margin-right: auto;
-    margin-left: auto;
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding is included in the width and height */
 }
 
 .project-card:hover {
@@ -203,12 +200,6 @@ footer {
     flex-grow: 1;
     height: 3px;
     background-color: #fff;
-}
-
-.about-section {
-    margin-top: 50px;
-    margin-left: 20%;
-    margin-right: 20%;
 }
 
 @media screen and (max-width: 1400px) {
