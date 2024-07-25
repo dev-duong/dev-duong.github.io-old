@@ -307,3 +307,9 @@ footer {
     flex-wrap: wrap;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .title-section {
+    margin: 25px 5% 25px 5%;
+  }
+}
