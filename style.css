@@ -20,6 +20,7 @@ body {
   height: 100%;
 
   overflow-x: hidden;
+  min-width: 500px;
 }
 
 /* NavBar */
@@ -134,13 +135,15 @@ p,
   width: 60%; /* Adjust the width as needed */
   height: auto;
 
+  min-width: 350px;
+
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; /* Or use space-evenly or space-around */
+  justify-content: center;
   align-items: center;
   border-radius: 10px;
   margin: auto;
-  gap: 30px; /* Optional: Add some gap between the cards */
+  gap: 25px; /* Optional: Add some gap between the cards */
 }
 
 .project-card img {
@@ -149,8 +152,7 @@ p,
 }
 
 .project-card {
-  flex: 1 1 calc(33.33% - 20px); /* Flexible basis to ensure 3 cards per row */
-  max-width: 350px;
+  width: 350px;
   height: 450px; /* Set a fixed height or auto if you prefer */
   background-color: rgb(217, 217, 217);
   color: rgb(45, 45, 45);
@@ -159,24 +161,38 @@ p,
   box-sizing: border-box; /* Ensure padding is included in the width and height */
 }
 
-.project-card:hover {
+.project-card:hover,
+.contact-card:hover {
   box-shadow: 25px 25px;
   transition: box-shadow 0.3s ease;
 }
 
+.contact-card {
+  max-width: 300px; /* Updated max-width */
+  height: 150px;
+  background-color: rgb(217, 217, 217);
+  color: rgb(45, 45, 45);
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box; /* Ensure padding is included in the width and height */
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-card img {
+  height: 30%;
+  object-fit: scale-down;
+}
+
 /* FOOTER */
 footer {
-  padding: 25px 100px;
-
-  width: 100%;
-  display: flex;
-  gap: 6%;
-
-  text-align: left;
-
-  position: fixed;
-  bottom: 25px;
-  left: 0;
+  text-align: center;
+  margin-top: 25px;
 }
 
 .URLS {
@@ -253,8 +269,8 @@ footer {
   }
 
   .card-box {
-    flex-direction: column;
-    gap: 25px;
+    align-items: center;
+    justify-content: center;
   }
 
   footer {
