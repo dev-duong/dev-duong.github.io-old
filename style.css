@@ -85,7 +85,7 @@ h4 {
 
 .polaroid {
   padding: 10px;
-  max-width: 100%;
+  max-width: 75%;
   background-color: rgb(217, 217, 217);
 
   box-shadow: 25px 25px;
@@ -301,6 +301,13 @@ footer {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  #dd-about-section {
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+}
+
 @media screen and (max-width: 350px) {
   .name {
     font-size: 25px;
@@ -310,6 +317,11 @@ footer {
 
 @media screen and (max-width: 500px) {
   .title-section {
-    margin: 25px 5% 25px 5%;
+    margin: 25px 10% 25px 10%;
+  }
+
+  #dd-about-section {
+    margin-right: 10%;
+    margin-left: 10%;
   }
 }
