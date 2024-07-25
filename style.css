@@ -20,7 +20,7 @@ body {
   height: 100%;
 
   overflow-x: hidden;
-  min-width: 500px;
+  min-width: 320px;
 }
 
 /* NavBar */
@@ -130,7 +130,7 @@ p,
   width: 60%; /* Adjust the width as needed */
   height: auto;
 
-  min-width: 350px;
+  min-width: 320px;
 
   display: flex;
   flex-wrap: wrap;
@@ -257,7 +257,7 @@ footer {
   }
 
   .homeItems {
-    min-height: 80vh;
+    min-height: 95vh;
     flex-direction: column;
     align-items: center;
     gap: 50px;
