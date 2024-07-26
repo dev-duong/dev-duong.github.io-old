@@ -220,6 +220,10 @@ footer {
   background-color: #fff;
 }
 
+.card-box a {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1400px) {
   ul.topnav {
     display: flex;

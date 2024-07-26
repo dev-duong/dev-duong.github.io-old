@@ -1,114 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Dat Duong's DevPortfolio</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <nav>
-        <ul class="topnav"> 
-            <div id="leftName">
-                <a href="index.html" class="name">
-                    <li id="firstName">> DAT <span style="color: rgb(208, 139, 75)">&nbsp;DUONG</span></li>
-                </a>
-            </div>
-            <button class="hamburger" onclick="toggleMenu()">☰</button>
-            <div id="rightBtns" class="navLinks">
-                <li><a href="#dd-about-section" class="navBtn">ABOUT</a></li>
-                <li><a href="#dd-projects-section" class="navBtn">PROJECTS</a></li>
-                <li><a href="#dd-contact-section" class="navBtn">CONTACT</a></li>
-            </div>
-        </ul>
+      <ul class="topnav">
+        <div id="leftName">
+          <a href="index.html" class="name">
+            <li id="firstName">
+              > DAT <span style="color: rgb(208, 139, 75)">&nbsp;DUONG</span>
+            </li>
+          </a>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <div id="rightBtns" class="navLinks">
+          <li><a href="#dd-about-section" class="navBtn">ABOUT</a></li>
+          <li><a href="#dd-projects-section" class="navBtn">PROJECTS</a></li>
+          <li><a href="#dd-contact-section" class="navBtn">CONTACT</a></li>
+        </div>
+      </ul>
     </nav>
 
     <div class="homeItems">
-        <div class="polaroid">
-            <img src="Images/index_page/Rectangle 24.png">
-            <div class="polInfo">
-                <h4>Universal Studios,</h4>
-                <h4>Singapore</h4>
-                <h4>2024</h4>
-            </div>
+      <div class="polaroid">
+        <img src="Images/index_page/Rectangle 24.png" />
+        <div class="polInfo">
+          <h4>Universal Studios,</h4>
+          <h4>Singapore</h4>
+          <h4>2024</h4>
         </div>
-        <div id="dd-about-section">
+      </div>
+      <div id="dd-about-section">
         <h2>About Me</h2>
-            <p>
-                My name is Dat, but I also go by Brendan.<br> I am a QUT Computer Science Graduate exploring low-level programming and UI/UX Design.<br> You can find my CV <a href="" class="hereBtn">here</a>.
-            </p>
-        </div>  
-    </div>
-
-    <div id="dd-skills-section">
-        <div class="title-section">
-            <h2>My Skills</h2>
-            <div class="line"></div>
-        </div>
+        <p>
+          My name is Dat, but I also go by Brendan.<br />
+          I am a QUT Computer Science Graduate exploring low-level programming
+          and UI/UX Design.<br />
+          You can find my CV <a href="" class="hereBtn">here</a>.
+        </p>
+      </div>
     </div>
 
     <div id="dd-projects-section">
+      <div class="title-section">
+        <h2>My Projects</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="card-box">
+        <div href="#" class="project-card">
+          <img src="Images/index_page/placeholder-img.png" />
+          <h4>Project</h4>
+        </div>
+        <div href="#" class="project-card">
+          <img src="Images/index_page/placeholder-img.png" />
+          <h4>Project</h4>
+        </div>
+        <div href="#" class="project-card">
+          <img src="Images/index_page/placeholder-img.png" />
+          <h4>Project</h4>
+        </div>
+      </div>
+
+      <div id="dd-contact-section">
         <div class="title-section">
-            <h2>My Projects</h2>
-            <div class="line"></div>
-        </div> 
+          <h2>Contact Me</h2>
+          <div class="line"></div>
+        </div>
 
         <div class="card-box">
-            <div href="#" class="project-card">
-                <img src="Images/index_page/placeholder-img.png">
-                <h4>Project</h4>
+          <a href="https://www.linkedin.com/in/dat-tan-duong/">
+            <div class="contact-card">
+              <img src="Images/index_page/linkedin.png" />
+              <h4>LinkedIn:</h4>
+              <p>dat-tan-duong</p>
             </div>
-            <div href="#" class="project-card">                 
-                <img src="Images/index_page/placeholder-img.png">
-                <h4>Project</h4>
-            </div>
-            <div href="#" class="project-card">
-                <img src="Images/index_page/placeholder-img.png">
-                <h4>Project</h4>
-            </div>
-
+          </a>
+          <div onclick="clickCopy('datduong.business@gmail.com')" href="#"
+          class="contact-card">
+          <img src="Images/index_page/mail.png" />
+          <h4>Email:</h4>
+          <p>datduong.business@gmail.com</p>
+        </div>
+        <div onclick="clickCopy('(+61)474573143')" href="#" class="contact-card">
+          <img src="Images/index_page/phone.png" />
+          <h4>Phone:</h4>
+          <p>(+61)474 573 143</p>
+        </div>
+        <a href="https://github.com/Git-DanD">
+          <div class="contact-card">
+            <img src="Images/index_page/phone.png" />
+            <h4>Github</h4>
+            <p>Git-DanD</p>
+          </div>
+        </a>
+      </div>
     </div>
 
-    <div id="dd-contact-section">
-        <div class="title-section">
-            <h2>Contact Me</h2>
-            <div class="line"></div>
-        </div>
-
-        <div class="card-box">          
-            <div href="#" class="contact-card">
-                <img src="Images/index_page/linkedin.png">
-                <h4>LinkedIn:</h4>
-                <p>dat-tan-duong</p>
-            </div>
-            <div href="#" class="contact-card">
-                <img src="Images/index_page/mail.png">
-                <h4>Email:</h4>
-                <p>datduong.business@gmail.com</p>
-            </div>           
-            <div href="#" class="contact-card">
-                <img src="Images/index_page/phone.png">
-                <h4>Phone:</h4>
-                <p>(+61)474 573 143</p>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <a class="URLS" href="https://github.com/Git-DanD">GITHUB</a>
-    </footer>
+    <footer></footer>
 
     <script>
-        function toggleMenu() {
-            var navLinks = document.getElementById("rightBtns");
-            if (navLinks.style.display === "flex") {
-                navLinks.style.display = "none";
-            } else {
-                navLinks.style.display = "flex";
-            }
+      function toggleMenu() {
+        var navLinks = document.getElementById("rightBtns");
+        if (navLinks.style.display === "flex") {
+          navLinks.style.display = "none";
+        } else {
+          navLinks.style.display = "flex";
         }
+      }
+
+      function clickCopy(text) {
+        navigator.clipboard.writeText(text);
+
+        alert("Copied to text: " + text);
+      }
     </script>
-    
-</body>
+  </body>
 </html>
