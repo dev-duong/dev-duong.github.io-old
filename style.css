@@ -177,6 +177,8 @@ p,
   text-align: center;
   justify-content: center;
   align-items: center;
+
+  cursor: pointer;
 }
 
 .contact-card img {
