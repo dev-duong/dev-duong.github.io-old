@@ -154,12 +154,13 @@ p,
   border-radius: 10px;
   padding: 10px;
   box-sizing: border-box; /* Ensure padding is included in the width and height */
+
+  transition: box-shadow 0.3s ease;
 }
 
 .project-card:hover,
 .contact-card:hover {
   box-shadow: 15px 15px;
-  transition: box-shadow 0.3s ease;
 }
 
 .contact-card {
@@ -179,6 +180,8 @@ p,
   align-items: center;
 
   cursor: pointer;
+
+  transition: box-shadow 0.3s ease;
 }
 
 .contact-card img {
