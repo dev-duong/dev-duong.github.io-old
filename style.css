@@ -43,6 +43,15 @@ li {
   display: flex;
 }
 
+#dd-about-info-list {
+  padding: 20px;
+  list-style-type: disc;
+}
+
+#dd-about-info-list li {
+  display: list-item;
+}
+
 #leftName {
   display: flex;
 }
