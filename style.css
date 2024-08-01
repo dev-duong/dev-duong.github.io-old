@@ -203,7 +203,8 @@ p,
   object-fit: scale-down;
 }
 
-.contact-card p {
+.contact-card p,
+.card-box p {
   color: rgb(45, 45, 45);
 }
 
