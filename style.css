@@ -172,6 +172,16 @@ p,
   transition: box-shadow 0.3s ease;
 }
 
+#project-categories {
+  display: flex;
+  gap: 30px;
+}
+
+#project-categories a {
+  text-decoration: none;
+  letter-spacing: normal;
+}
+
 .project-card:hover,
 .contact-card:hover {
   box-shadow: 15px 15px;
