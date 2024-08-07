@@ -144,7 +144,7 @@ p,
 .card-box-uiux,
 .card-box-graphics,
 .card-box-contact {
-  width: 60%; /* Adjust the width as needed */
+  width: 60%;
   height: auto;
 
   min-width: 320px;
@@ -155,7 +155,25 @@ p,
   align-items: center;
   border-radius: 10px;
   margin: auto;
-  gap: 25px; /* Optional: Add some gap between the cards */
+  gap: 25px;
+}
+
+.card-box {
+  display: none; /* Initially hidden */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  opacity: 0;
+  transition: opacity 1s ease, visibility 1s ease;
+  visibility: hidden; /* Start with hidden visibility */
+}
+
+/* Use 'visibility' instead of 'display' to manage transitions */
+.card-box.show {
+  display: flex;
+  opacity: 1; /* Fade in */
+  visibility: visible; /* Set visibility to visible */
 }
 
 .project-card img {

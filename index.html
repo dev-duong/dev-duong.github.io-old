@@ -212,18 +212,23 @@
 
       function clickCopy(text) {
         navigator.clipboard.writeText(text);
-
         alert("Copied to text: " + text);
       }
 
       function showTab(tabName) {
         var tabs = document.getElementsByClassName("card-box");
         for (var i = 0; i < tabs.length; i++) {
-          tabs[i].style.display = "none";
+          tabs[i].classList.remove("show");
+          tabs[i].style.display = "none"; // Hide the tab completely
         }
-        document.getElementById("card-box-" + tabName).style.display = "flex";
+        var activeTab = document.getElementById("card-box-" + tabName);
+        activeTab.style.display = "flex"; // Show the active tab
+        setTimeout(function () {
+          activeTab.classList.add("show");
+        }, 10); // Add a slight delay to ensure display changes before opacity transition
       }
 
+      // Optional: Show the default tab when the page loads
       document.addEventListener("DOMContentLoaded", function () {
         showTab("programming");
       });
