@@ -39,12 +39,19 @@
           My name is Dat, but I also go by Brendan.<br />
           I am a QUT Computer Science Graduate exploring low-level programming
           and UI/UX Design.<br />
-          You can find my CV <a href="" class="hereBtn">here</a> (WIP). <!--FIX CV-->
+          You can find my CV <a href="" class="hereBtn">here</a> (WIP).
+          <!--FIX CV-->
         </p>
         <ul id="dd-about-info-list">
-          <li><p><b>Age: </b>21</p></li>
-          <li><p><b>Located: </b>Brisbane, Queensland</p></li>
-        <li><p><b>Bachelor: </b>Information Technology (Computer Science)</p></li>
+          <li>
+            <p><b>Age: </b>21</p>
+          </li>
+          <li>
+            <p><b>Located: </b>Brisbane, Queensland</p>
+          </li>
+          <li>
+            <p><b>Bachelor: </b>Information Technology (Computer Science)</p>
+          </li>
         </ul>
       </div>
     </div>
@@ -54,56 +61,134 @@
         <h2>My Projects</h2>
         <div class="line"></div>
         <ul id="project-categories">
-          <li><a href="">Programming</a></li>
-          <li><a href="">UI/UX</a></li>
-          <li><a href="">Graphics Design</a></li>
+          <li>
+            <a
+              href="javascript:void(0);"
+              onclick="showTab('programming')"
+              class="tab-link"
+              >Programming</a
+            >
+          </li>
+          <li>
+            <a
+              href="javascript:void(0);"
+              onclick="showTab('uiux')"
+              class="tab-link"
+              >UI/UX</a
+            >
+          </li>
+          <li>
+            <a
+              href="javascript:void(0);"
+              onclick="showTab('graphics')"
+              class="tab-link"
+              >Graphics Design</a
+            >
+          </li>
         </ul>
       </div>
 
-      <div class="card-box">
+      <div id="card-box-programming" class="card-box card-box-programming">
         <a href="#" class="project-card">
           <img src="Images/index_page/placeholder-img.png" />
           <h4>Programming</h4>
-          <p>A collection of programs showcasing diverse programming skills and technologies.</p>
+          <p>
+            A collection of programs showcasing diverse programming skills and
+            technologies.
+          </p>
         </a>
         <a href="#" class="project-card">
           <img src="Images/index_page/placeholder-img.png" />
-          <h4>UI/UX</h4>
-          <p>A variety of thoughtful designs focused on enhancing user experience.</p>
+          <h4>Programming</h4>
+          <p>
+            A collection of programs showcasing diverse programming skills and
+            technologies.
+          </p>
         </a>
-        <a href="graphics.html" class="project-card">
+        <a href="#" class="project-card">
           <img src="Images/index_page/placeholder-img.png" />
-          <h4>Graphics Design</h4>
-          <p>A collection of creative visuals reflecting a passion for art and design.</p>
+          <h4>Programming</h4>
+          <p>
+            A collection of programs showcasing diverse programming skills and
+            technologies.
+          </p>
         </a>
       </div>
 
-      <div id="dd-contact-section">
-        <div class="title-section">
-          <h2>Contact Me</h2>
-          <div class="line"></div>
-        </div>
+      <div
+        id="card-box-uiux"
+        class="card-box card-box-uiux"
+        style="display: none"
+      >
+        <a href="#" class="project-card">
+          <img src="Images/index_page/placeholder-img.png" />
+          <h4>UI/UX</h4>
+          <p>
+            A variety of thoughtful designs focused on enhancing user
+            experience.
+          </p>
+        </a>
+        <!-- Other UI/UX cards -->
+      </div>
 
-        <div class="card-box">
-          <a href="https://www.linkedin.com/in/dat-tan-duong/" target="_blank" rel="noreferrer noopener">
-            <div class="contact-card">
-              <img src="Images/index_page/linkedin.png" />
-              <h4>LinkedIn:</h4>
-              <p>dat-tan-duong</p>
-            </div>
-          </a>
-          <div onclick="clickCopy('datduong.business@gmail.com')" href="#"
-          class="contact-card">
+      <div
+        id="card-box-graphics"
+        class="card-box card-box-graphics"
+        style="display: none"
+      >
+        <a href="graphics.html" class="project-card">
+          <img src="Images/index_page/placeholder-img.png" />
+          <h4>Graphics Design</h4>
+          <p>
+            A collection of creative visuals reflecting a passion for art and
+            design.
+          </p>
+        </a>
+        <!-- Other graphics design cards -->
+      </div>
+    </div>
+
+    <div id="dd-contact-section">
+      <div class="title-section">
+        <h2>Contact Me</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="card-box-contact">
+        <a
+          href="https://www.linkedin.com/in/dat-tan-duong/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <div class="contact-card">
+            <img src="Images/index_page/linkedin.png" />
+            <h4>LinkedIn:</h4>
+            <p>dat-tan-duong</p>
+          </div>
+        </a>
+        <div
+          onclick="clickCopy('datduong.business@gmail.com')"
+          href="#"
+          class="contact-card"
+        >
           <img src="Images/index_page/mail.png" />
           <h4>Email:</h4>
           <p>datduong.business@gmail.com</p>
         </div>
-        <div onclick="clickCopy('(+61)474573143')" href="#" class="contact-card">
+        <div
+          onclick="clickCopy('(+61)474573143')"
+          href="#"
+          class="contact-card"
+        >
           <img src="Images/index_page/phone.png" />
           <h4>Phone:</h4>
           <p>(+61)474 573 143</p>
         </div>
-        <a href="https://github.com/Git-DanD" target="_blank" rel="noreferrer noopener">
+        <a
+          href="https://github.com/Git-DanD"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <div class="contact-card">
             <img src="Images/index_page/github.png" />
             <h4>Github</h4>
@@ -127,9 +212,26 @@
 
       function clickCopy(text) {
         navigator.clipboard.writeText(text);
-
         alert("Copied to text: " + text);
       }
+
+      function showTab(tabName) {
+        var tabs = document.getElementsByClassName("card-box");
+        for (var i = 0; i < tabs.length; i++) {
+          tabs[i].classList.remove("show");
+          tabs[i].style.display = "none"; // Hide the tab completely
+        }
+        var activeTab = document.getElementById("card-box-" + tabName);
+        activeTab.style.display = "flex"; // Show the active tab
+        setTimeout(function () {
+          activeTab.classList.add("show");
+        }, 10); // Add a slight delay to ensure display changes before opacity transition
+      }
+
+      // Optional: Show the default tab when the page loads
+      document.addEventListener("DOMContentLoaded", function () {
+        showTab("programming");
+      });
     </script>
   </body>
 </html>
