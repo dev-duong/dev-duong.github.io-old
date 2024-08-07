@@ -140,7 +140,10 @@ p,
   letter-spacing: normal;
 }
 
-.card-box {
+.card-box-programming,
+.card-box-uiux,
+.card-box-graphics,
+.card-box-contact {
   width: 60%; /* Adjust the width as needed */
   height: auto;
 
@@ -214,7 +217,7 @@ p,
 }
 
 .contact-card p,
-.card-box p {
+.dd-projects-section p {
   color: rgb(45, 45, 45);
 }
 
@@ -250,7 +253,10 @@ footer {
   background-color: #fff;
 }
 
-.card-box a {
+.card-box-programming a,
+.card-box-uiux a,
+.card-box-graphics a,
+.card-box-contact a {
   text-decoration: none;
 }
 
@@ -306,7 +312,10 @@ footer {
     padding-left: 0px;
   }
 
-  .card-box {
+  .card-box-programming,
+  .card-box-uiux,
+  .card-box-graphics,
+  .card-box-contact {
     align-items: center;
     justify-content: center;
   }
