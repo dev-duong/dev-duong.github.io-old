@@ -64,24 +64,24 @@
           <li>
             <a
               href="javascript:void(0);"
+              id="category-programming"
               onclick="showTab('programming')"
-              class="tab-link"
               >Programming</a
             >
           </li>
           <li>
             <a
               href="javascript:void(0);"
+              id="category-uiux"
               onclick="showTab('uiux')"
-              class="tab-link"
               >UI/UX</a
             >
           </li>
           <li>
             <a
               href="javascript:void(0);"
+              id="category-graphics"
               onclick="showTab('graphics')"
-              class="tab-link"
               >Graphics Design</a
             >
           </li>
@@ -226,6 +226,13 @@
         setTimeout(function () {
           activeTab.classList.add("show");
         }, 10); // Add a slight delay to ensure display changes before opacity transition
+
+        // Update active category link
+        var links = document.querySelectorAll("#project-categories a");
+        links.forEach(function (link) {
+          link.classList.remove("active");
+        });
+        document.getElementById("category-" + tabName).classList.add("active");
       }
 
       // Optional: Show the default tab when the page loads
