@@ -165,7 +165,7 @@ p,
   align-items: center;
   gap: 25px;
   opacity: 0;
-  transition: opacity 1s ease, visibility 1s ease;
+  transition: opacity 2s ease, visibility 1s ease;
   visibility: hidden; /* Start with hidden visibility */
 }
 
@@ -196,6 +196,16 @@ p,
 #project-categories {
   display: flex;
   gap: 30px;
+}
+
+/* Add styles for the active category link */
+#project-categories a.active {
+  text-decoration: underline;
+  color: #d08b4b;
+}
+
+#project-categories a:hover {
+  text-shadow: 5px 5px rgb(19, 19, 19);
 }
 
 #project-categories a {
