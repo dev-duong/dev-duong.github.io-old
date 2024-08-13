@@ -60,6 +60,9 @@
       <section class="title-section">
         <h2>My Projects</h2>
         <div class="line"></div>
+        <button class="project-hamburger" onclick="toggleProjectMenu()">
+          ☰
+        </button>
         <ul id="project-categories">
           <li>
             <a
@@ -243,6 +246,15 @@
       document.addEventListener("DOMContentLoaded", function () {
         showTab("programming");
       });
+
+      function toggleProjectMenu() {
+        var projectCategories = document.getElementById("project-categories");
+        if (projectCategories.classList.contains("show")) {
+          projectCategories.classList.remove("show");
+        } else {
+          projectCategories.classList.add("show");
+        }
+      }
     </script>
   </body>
 </html>
