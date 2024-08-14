@@ -57,39 +57,26 @@
     </section>
 
     <section id="dd-projects-section">
-      <section class="title-section">
+      <div class="title-section">
         <h2>My Projects</h2>
-        <div class="line"></div>
-        <button class="project-hamburger" onclick="toggleProjectMenu()">
-          ☰
-        </button>
+        <hr />
+
         <ul id="project-categories">
           <li>
-            <a
-              href="javascript:void(0);"
-              id="category-programming"
-              onclick="showTab('programming')"
+            <a id="category-programming" onclick="showTab('programming')"
               >Programming</a
             >
           </li>
           <li>
-            <a
-              href="javascript:void(0);"
-              id="category-uiux"
-              onclick="showTab('uiux')"
-              >UI/UX</a
-            >
+            <a id="category-uiux" onclick="showTab('uiux')">UI/UX</a>
           </li>
           <li>
-            <a
-              href="javascript:void(0);"
-              id="category-graphics"
-              onclick="showTab('graphics')"
+            <a id="category-graphics" onclick="showTab('graphics')"
               >Graphics Design</a
             >
           </li>
         </ul>
-      </section>
+      </div>
 
       <section id="card-box-programming" class="card-box card-box-programming">
         <a href="#" class="project-card">
@@ -158,7 +145,7 @@
     <section id="dd-contact-section">
       <div class="title-section">
         <h2>Contact Me</h2>
-        <div class="line"></div>
+        <hr />
       </div>
 
       <div class="card-box-contact">
@@ -246,15 +233,6 @@
       document.addEventListener("DOMContentLoaded", function () {
         showTab("programming");
       });
-
-      function toggleProjectMenu() {
-        var projectCategories = document.getElementById("project-categories");
-        if (projectCategories.classList.contains("show")) {
-          projectCategories.classList.remove("show");
-        } else {
-          projectCategories.classList.add("show");
-        }
-      }
     </script>
   </body>
 </html>
