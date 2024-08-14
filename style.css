@@ -196,6 +196,8 @@ p,
 #project-categories {
   display: flex;
   gap: 30px;
+  padding: 0;
+  float: right;
 }
 
 /* Add styles for the active category link */
@@ -211,6 +213,9 @@ p,
 #project-categories a {
   text-decoration: none;
   letter-spacing: normal;
+
+  font-size: 20px;
+  margin-top: 10px;
 }
 
 .project-card:hover,
@@ -263,22 +268,21 @@ footer {
 /* ABOUT PAGE */
 
 .title-section {
-  display: flex;
-  align-items: center;
+  display: block;
 
-  margin: 25px 20% 25px 20%;
+  margin: 25px 20% 15px 20%;
 }
 
 .title-section h2 {
   font-size: 24px;
   margin: 0;
-  padding-right: 20px;
 }
 
-.title-section .line {
-  flex-grow: 1;
-  height: 3px;
+hr {
+  width: 100%;
+  height: 2px;
   background-color: #fff;
+  margin-top: 10px;
 }
 
 .card-box-programming a,
@@ -295,6 +299,9 @@ footer {
 #project-categories {
   display: flex; /* Default flex display */
   gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -315,6 +322,10 @@ footer {
   .navBtn {
     width: 100%;
     text-align: center;
+  }
+
+  .title-section {
+    flex-direction: column;
   }
 
   .hamburger {
@@ -387,26 +398,6 @@ footer {
 
   p {
     font-size: 20px;
-  }
-
-  .project-hamburger {
-    display: block;
-    font-size: 25px;
-    background: none;
-    border: none;
-    color: white;
-    margin-top: 20px;
-  }
-
-  #project-categories {
-    display: none; /* Hide categories by default */
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-  }
-
-  #project-categories.show {
-    display: flex; /* Show categories when hamburger is clicked */
   }
 }
 
