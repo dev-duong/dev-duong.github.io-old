@@ -194,9 +194,12 @@ p,
 
 #project-categories {
   display: flex;
-  gap: 30px;
   padding: 0;
-  float: right;
+  list-style: none; /* Optional: removes default list styling */
+}
+
+#project-categories li:first-child {
+  margin-left: auto; /* Pushes the first list item to the right, bringing the others along with it */
 }
 
 #category-programming,
