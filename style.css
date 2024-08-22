@@ -94,6 +94,8 @@ li {
 /* Body */
 
 h4 {
+  letter-spacing: normal;
+  font-size: 20px;
   color: black;
 }
 
@@ -268,7 +270,8 @@ p,
 }
 
 .contact-card p,
-.dd-projects-section p {
+.dd-projects-section p,
+.project-card p {
   color: rgb(45, 45, 45);
 }
 
@@ -415,7 +418,7 @@ hr {
   }
 
   p {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
